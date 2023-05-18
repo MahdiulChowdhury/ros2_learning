@@ -1,4 +1,4 @@
-# ros2_learning
+# ros2_learning (Udemy course: https://www.udemy.com/course/ros2-for-beginners/)
 ## how create workspace and package: 
 1. mkdir -p my_ros2_ws/src
 2. colcon build
