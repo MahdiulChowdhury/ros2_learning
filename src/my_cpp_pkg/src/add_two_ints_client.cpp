@@ -27,7 +27,7 @@ public:
         try
         {
             auto response = future.get();
-            RCLCPP_INFO(this->get_logger(), "%d + %d = %d", a, b, response->sum);
+            RCLCPP_INFO(this->get_logger(), "%d + %d = %d", a, b, (int)response->sum);
         }
         catch (const std::exception &e)
         {

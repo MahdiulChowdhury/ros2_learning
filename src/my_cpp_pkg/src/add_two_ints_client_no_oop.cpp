@@ -7,6 +7,7 @@ int main(int argc, char **argv)
     auto node = std::make_shared<rclcpp::Node>("add_two_ints_client_no_oop");
 
     auto client = node->create_client<example_interfaces::srv::AddTwoInts>("add_two_ints");
+    
     while (!client->wait_for_service(std::chrono::seconds(1)))
     {
         RCLCPP_WARN(node->get_logger(), "Waiting for the server to be up...");
